@@ -1,0 +1,168 @@
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+header {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  background-color: #5C6AC4;
+}
+
+.div-logo {
+  padding: 25px;
+}
+.div-logo img {
+  width: 150px;
+}
+
+.div-home {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 50px;
+  color: #FFFFFF;
+  background-color: #5C6AC4;
+}
+
+.div-text-home {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 25px;
+}
+.div-text-home h2, .div-text-home p {
+  width: 100%;
+  text-align: center;
+}
+.div-text-home h2 {
+  margin-bottom: 10px;
+}
+.div-text-home p {
+  font-size: 1.5em;
+}
+
+.div-input-email {
+  width: 80%;
+  display: flex;
+  flex-wrap: no-wrap;
+  justify-content: center;
+}
+.div-input-email input {
+  width: 100%;
+  max-width: 450px;
+  height: 45px;
+  padding-left: 10px;
+  margin-right: 10px;
+  border-radius: 5px;
+  border: none;
+}
+.div-input-email input:focus {
+  box-shadow: 0px 0px 10px lightgray;
+}
+.div-input-email button {
+  width: 140px;
+  height: 45px;
+  min-width: 140px;
+  border-radius: 5px;
+  border: none;
+  background-color: #30373B;
+  color: white;
+  cursor: pointer;
+}
+.div-input-email button:hover {
+  border: 2px solid #30373B;
+  background: none;
+  transition: background 0.3s;
+}
+
+span {
+  width: 100%;
+  margin-top: 20px;
+  text-align: center;
+}
+
+.div-img-home {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  z-index: 2;
+}
+
+.img-home {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 700px;
+  height: 400px;
+  border: 1px solid black;
+  margin-top: 20px;
+}
+
+.div-svg {
+  width: 100%;
+  display: absolute;
+  margin-top: -20%;
+  z-index: -1;
+}
+.div-svg svg path {
+  fill: #FFFFFF;
+}
+
+.div-list-benefits {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding: 50px;
+}
+
+.list-benefits {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  column-gap: 30px;
+}
+.list-benefits li {
+  width: 220px;
+  height: auto;
+  margin-bottom: 10px;
+  font-size: 0.9em;
+}
+.list-benefits li span {
+  text-align: start;
+  font-size: 3em;
+  color: #5C6AC4;
+}
+
+.title-benefits {
+  padding: 10px 0;
+  font-weight: bold;
+}
+
+.text-benefits {
+  color: #97A2AB;
+  padding-right: 5px;
+  line-height: 20px;
+}
+
+@media (max-width: 800px) {
+  .div-input-email {
+    flex-wrap: wrap;
+  }
+  .div-input-email input {
+    margin: 0 0 20px 0;
+  }
+  .div-input-email button {
+    width: 100%;
+    max-width: 450px;
+  }
+}
+@media (max-width: 570px) {
+  .list-benefits li {
+    text-align: center;
+  }
+  .list-benefits li span {
+    text-align: center;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

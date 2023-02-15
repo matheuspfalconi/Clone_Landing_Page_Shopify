@@ -1,0 +1,155 @@
+@use 'variables'
+
+body
+	font-family: variables.$font
+
+header
+	display: flex
+	justify-content: center
+	align-content: center
+	background-color: variables.$first-color
+
+.div-logo
+	padding: 25px
+
+	img
+		width: 150px
+
+.div-home
+	display: flex
+	flex-wrap: wrap
+	justify-content: center
+	padding: 50px
+	color: variables.$second-color
+	background-color: variables.$first-color
+
+.div-text-home
+	display: flex
+	flex-wrap: wrap
+	margin-bottom: 25px
+
+	h2, p
+		width: 100%
+		text-align: center
+
+	h2
+		margin-bottom: 10px
+
+	p
+		font-size: 1.5em
+
+.div-input-email
+	width: 80%
+	display: flex
+	flex-wrap: no-wrap
+	justify-content: center
+
+	input
+		width: 100%
+		max-width: 450px
+		height: 45px
+		padding-left: 10px
+		margin-right: 10px
+		border-radius: 5px
+		border: none
+
+	input:focus
+		box-shadow: 0px 0px 10px lightgray
+
+	button
+		width: 140px
+		height: 45px
+		min-width: 140px
+		border-radius: 5px
+		border: none
+		background-color: variables.$button-color
+		color: white
+		cursor: pointer
+
+	button:hover
+		border: 2px solid variables.$button-color
+		background: none
+		transition: background .3s
+
+span
+	width: 100%
+	margin-top: 20px
+	text-align: center
+
+.div-img-home
+	width: 100%
+	display: flex
+	justify-content: center
+	z-index: 2
+
+.img-home
+	display: flex
+	justify-content: center
+	align-items: center
+	width: 700px
+	height: 400px
+	border: 1px solid black
+	margin-top: 20px
+
+.div-svg
+	width: 100%
+	display: absolute
+	margin-top: -20%
+	z-index: -1
+
+	svg
+		path
+			fill: variables.$second-color
+
+.div-list-benefits
+	width: 100%
+	display: flex
+	justify-content: center
+	padding: 50px
+
+.list-benefits
+	display: flex
+	flex-wrap: wrap
+	justify-content: center
+	column-gap: 30px
+
+	li
+		width: 220px
+		height: auto
+		margin-bottom: 10px
+		font-size: 0.9em
+
+		span
+			text-align: start
+			font-size: 3em
+			color: variables.$first-color
+
+.title-benefits
+	padding: 10px 0
+	font-weight: bold
+
+.text-benefits
+	color: variables.$text-color
+	padding-right: 5px
+	line-height: 20px
+
+@media(max-width: 800px)
+	.div-input-email
+		flex-wrap: wrap
+
+		input
+			margin: 0 0 20px 0
+
+		button
+			width: 100%
+			max-width: 450px
+
+
+
+@media(max-width: 570px)
+	.list-benefits
+		li
+			text-align: center
+
+			span
+				text-align: center
